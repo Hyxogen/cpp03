@@ -30,6 +30,7 @@ void ScavTrap::guardGate() {
                           << " does not have enough energy points to enter "
                              "gate keeper mode!"
                           << std::endl;
+				return;
         }
         --_energy_points;
         std::cout << *this << " has entered gate keeping mode!" << std::endl;
